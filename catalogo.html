@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="principal2">
-   
+
 
     <div class="geral">
         <header class="cabecalho">
@@ -29,73 +31,107 @@
         </header>
         <div class="sabores">
             <div class="sabor">
-               
+
             </div>
-<br>
-<br>
-<br>
+            <br>
+            <br>
+            <br>
 
             <div class="filmes">
 
                 <div class="img-filmes">
-                <img src="img/34.png" class="img-sabor">
-                <p class="p-filmes">Homem-de-ferro</p>
+                    <img src="img/34.png" class="img-sabor">
+                    <p class="p-filmes">Homem-de-ferro</p>
                 </div>
                 <div class="img-filmes">
-                <img src="img/m2.png" class="img-sabor">
-                <p class="p-filmes">Homem aranha</p>
+                    <img src="img/m2.png" class="img-sabor">
+                    <p class="p-filmes">Homem aranha</p>
                 </div>
                 <div class="img-filmes">
-                <img src="img/mm.png" class="img-sabor">
-                <p class="p-filmes">Vingadores ultimato</p>
+                    <img src="img/mm.png" class="img-sabor">
+                    <p class="p-filmes">Vingadores ultimato</p>
                 </div>
                 <div class="img-filmes">
-                <img src="img/Rectangle 36.png" class="img-sabor">
-                <p class="p-filmes">The batman</p>
+                    <img src="img/Rectangle 36.png" class="img-sabor">
+                    <p class="p-filmes">The batman</p>
                 </div>
                 <div class="img-filmes">
-                <img src="img/Rectangle 37.png" class="img-sabor">
-                <p class="p-filmes">La casa de papel</p>
+                    <img src="img/Rectangle 37.png" class="img-sabor">
+                    <p class="p-filmes">La casa de papel</p>
                 </div>
                 <div class="img-filmes">
-                <img src="img/Rectangle 38.png" class="img-sabor">
-                <p class="p-filmes">Top gun</p>
+                    <img src="img/Rectangle 38.png" class="img-sabor">
+                    <p class="p-filmes">Top gun</p>
                 </div>
                 <div class="img-filmes">
-                <img src="img/Rectangle 39.png" class="img-sabor">
-                <p class="p-filmes">Motoqueiro fantasma</p>
+                    <img src="img/Rectangle 39.png" class="img-sabor">
+                    <p class="p-filmes">Motoqueiro fantasma</p>
                 </div>
             </div>
-            <div class="filmes2">
+            <div class="filmes">
 
-               
+
                 <div class="img-filmes">
-                <img src="img/filme 2 6.png" class="img-sabor">
-                <p class="p-filmes">Liga da justiça</p>
+                    <img src="img/filme 2 6.png" class="img-sabor">
+                    <p class="p-filmes">Panico</p>
                 </div>
                 <div class="img-filmes">
-                <img src="img/filme 2 2.png" class="img-sabor">
-                <p class="p-filmes">O gato de botas</p>
+                    <img src="img/filme 2 2.png" class="img-sabor">
+                    <p class="p-filmes">Liga da justiça</p>
                 </div>
                 <div class="img-filmes">
-                <img src="img/filme 2 3.png" class="img-sabor">
-                <p class="p-filmes">Avatar</p>
+                    <img src="img/filme 2 3.png" class="img-sabor">
+                    <p class="p-filmes">Gato de botas</p>
                 </div>
                 <div class="img-filmes">
-                <img src="img/filme 2 4.png" class="img-sabor">
-                <p class="p-filmes">Velozes e furiozos</p>
+                    <img src="img/filme 2 4.png" class="img-sabor">
+                    <p class="p-filmes">Avatar</p>
                 </div>
                 <div class="img-filmes">
-                <img src="img/filme 2 5.png" class="img-sabor">
-                <p class="p-filmes">Top gun</p>
+                    <img src="img/filme 2 5.png" class="img-sabor">
+                    <p class="p-filmes">Velozes e furiosos</p>
                 </div>
                 <div class="img-filmes">
-                <img src="img/immmmm.png" class="img-sabor">
-                <p class="p-filmes">Anabelli</p>
+                    <img src="img/immmmm.png" class="img-sabor">
+                    <p class="p-filmes">Anbelli</p>
                 </div>
             </div>
 
-          
+        </div>
+    </div>
+<script>
+    const slider = document.querySelectorAll('.filmes');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
     
+    
+    
+    slider.forEach(Slid =>{
+        Slid.addEventListener('mousedown', (e) => {
+            isDown = true;
+            Slid.classList.add('active');
+            startX = e.pageX - Slid.offsetLeft;
+            scrollLeft = Slid.scrollLeft;
+        });
+        Slid.addEventListener('mouseleave', () => {
+            isDown = false;
+            Slid.classList.remove('active');
+        });
+        Slid.addEventListener('mouseup', () => {
+            isDown = false;
+            Slid.classList.remove('active');
+        });
+        Slid.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - Slid.offsetLeft;
+            const walk = (x - startX) * 1;
+            Slid.scrollLeft = scrollLeft - walk;
+            console.log(walk);
+        });
+    })
+    </script>
 </body>
+
 </html>

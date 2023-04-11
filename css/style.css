@@ -1,25 +1,31 @@
-.login{
-    background-color:#ECEED0;
+.login {
+    background-color: #ECEED0;
     ;
 }
-.divlogin{
- text-align: center;
+
+.divlogin {
+    text-align: center;
 
 }
-.cadastro2{
+
+.cadastro2 {
     text-align: center;
-margin: 6%;
+    margin: 6%;
 }
-.logocadastro{
-  height: 50px;
+
+.logocadastro {
+    height: 50px;
 }
-.alinhar{
+
+.alinhar {
     text-align: center;
-    
+
 }
-.principal1{
+
+.principal1 {
     height: 45px;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;700&display=swap');
 
 * {
@@ -29,8 +35,8 @@ margin: 6%;
     font-family: 'roboto', sans-serif;
 }
 
-.cabecalho{
-    background-color: rgb(200, 255, 0);
+.cabecalho {
+    background-color: rgb(195, 186, 186);
     display: flex;
     padding: 20px;
     box-shadow: 0px 0px 15px black;
@@ -38,38 +44,38 @@ margin: 6%;
     align-items: center;
 }
 
-.img-cabecalho{
+.img-cabecalho {
     width: 80px;
     margin-right: 30px;
 }
 
-.botao-cabecalho{
+.botao-cabecalho {
     text-decoration: none;
     color: black;
     margin: 15px;
 }
 
-.botao-cabecalho:hover{
+.botao-cabecalho:hover {
     color: rgb(9, 113, 3);
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
 }
 
-.botao-encontre-uma-loja{
+.botao-encontre-uma-loja {
     text-decoration: none;
     color: black;
     margin: 10px;
     font-size: 20px;
 }
 
-.botao-encontre-uma-loja:hover{
+.botao-encontre-uma-loja:hover {
     color: rgb(9, 113, 3);
 }
 
-.botao-entrar{
+.botao-entrar {
     text-decoration: none;
     color: black;
     margin: 10px;
@@ -79,12 +85,12 @@ margin: 6%;
     padding: 10px;
 }
 
-.botao-entrar:hover{
+.botao-entrar:hover {
     background-color: black;
     color: white;
 }
 
-.botao-participe-agora{
+.botao-participe-agora {
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin: 10px;
@@ -93,123 +99,192 @@ margin: 6%;
     padding: 10px;
 }
 
-.botao-participe-agora:hover{
+.botao-participe-agora:hover {
     background-color: white;
     color: black;
     border: 2px solid black;
 }
 
-.cabecalho2{
+.cabecalho2 {
     display: flex;
     align-items: center;
 }
-.principal2{
-    background-color:#ECEED0;
+
+.principal2 {
+    background-color: #ECEED0;
 }
+
 /*img*/
-.sabores{
+.sabores {
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
 }
-.img-sabor{
-    border-radius: 8px;
-    margin: 10px;
+
+.img-sabor {
+    border-radius: 50px;
+    margin: 10px; 
+
+    
+   
 }
-.img-filmes{
+.img-sabor:hover{
+  border-radius: 12px;
+  margin: 10px;
+  transition: 1s;
+  border: solid black 60px;
+  width: 350px;
+ height: 250px;
+}
+
+.img-filmes {
     background-color: rgb(0, 0, 0);
     border-radius: 8px;
     margin: 10px;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+
+    min-width: 307px;
+    min-height: 233,4px;
+
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.p-filmes{
+
+.p-filmes {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
-.filmes{
-    justify-content:space-around;
+
+.filmes {
     display: flex;
- overflow-x: scroll;
+    overflow-x: scroll;
+    margin: 20px;
+  
 }
-.filmes2{
-    justify-content:space-around;
-    display: flex;
- overflow-x: scroll;
+
+
+
+.filmes img {
+    width: 300px;
+    height: 310px;
+    border-radius: 20px;
 }
-input{
+
+.filmes::-webkit-scrollbar {
+    display: none;
+}
+
+input {
     width: 300px;
     height: 35px;
     border-radius: 50px;
-    
+
 }
-.Botao{
+
+.Botao {
     width: 100px;
-    height: 30px; 
+    height: 30px;
     border-radius: 50px;
     color: white;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
-.index1{
+
+.index1 {
     width: 150px;
 }
-.index2{
+
+.index2 {
     text-align: center;
 }
-.imgindex{
+
+.imgindex {
     width: 350px;
 }
-.index{
-    background-color:#ECEED0;
+
+.index {
+    background-color: #ECEED0;
 }
-.texto1{
+
+.teen {
+    width: 500px;
+    border-radius: 10px;
+    border: solid #ECEED0 5px;
+}
+
+.wolf {
+    display: flex;
+    margin: 70px;
+    border: solid black;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #AFB4AE;
+    color: rgb(0, 0, 0);
+
+}
+
+.ferro {
+    display: flex;
+    margin: 70px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #AFB4AE;
+    color: rgb(0, 0, 0);
+    border: solid black;
+}
+
+.tony {
+    width: 500px;
+    border-radius: 10px;
+    border: solid #ECEED0 5px;
+}
+
+.aranha {
+    display: flex;
+    margin: 70px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #AFB4AE;
+    color: rgb(0, 0, 0);
+    border: solid black;
+}
+
+.piter {
+    width: 500px;
+    border-radius: 10px;
+    border: solid #ECEED0 5px;
+}
+
+.star {
+    display: flex;
+    margin: 70px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #AFB4AE;
+    color: rgb(0, 0, 0);
+    border: solid black;
+}
+
+.texto1 {
+    margin: auto;
+    font-size: 25px;
     text-align: left;
-}.teen{
-    width: 500px;
-    border-radius: 10px;
- border: solid #ECEED0 5px;
+    padding: 20px;
 }
-.wolf{
-    display: flex;
-    margin: 70px;
-    border: solid black;
-    padding: 30px;
-    border-radius: 10px;
+
+.load {
     background-color: #AFB4AE;
-    color: rgb(0, 0, 0);
 }
-.ferro{
-    display: flex;
-    margin: 70px;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: #AFB4AE;
-    color: rgb(0, 0, 0);
-    border: solid black;
+
+.sair {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: end;
 }
-.tony{
-    width: 500px;
-    border-radius: 10px;
-    border: solid #ECEED0 5px;
-}
-.aranha{
-    display: flex;
-    margin: 70px;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: #AFB4AE;
-    color: rgb(0, 0, 0);
-    border: solid black;
-}
-.piter{
-    width: 500px;
-    border-radius: 10px;
-    border: solid #ECEED0 5px;
-}
-.star{
-    display: flex;
-    margin:70px;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: #AFB4AE;
-    color: rgb(0, 0, 0);
-    border: solid black;
+
+.messi {
+    text-align: end;
 }
