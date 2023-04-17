@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="principal2">
+    <div class="geral">
+        <header class="cabecalho">
+            <nav class="menu">
+                <img class="principal1" src="img/Group 26.png" alt="">
+                <a href="catalogo.html" class="botao-cabecalho"><b>Filmes</b></a>
+                <a href="serie.html" class="botao-cabecalho"><b>Series</b></a>
+                <a href="#" class="botao-cabecalho"><b>Animes</b></a>
+                <a href="artistas.html" class="botao-cabecalho"><b>Artista</b></a>
+                <a href="futebol.html" class="botao-cabecalho"><b>Futebol</b></a>
+
+            </nav>
+            <div class="cabecalho2">
+                <a href="maisfilmes.html" class="botao-encontre-uma-loja"><img src="img/location.svg" alt=""><b>Mais filmes</b></a>
+                <a href="http://127.0.0.1:5500/cadastromidia.html" class="botao-entrar"><b>Cadastro de midia</b></a>
+                <a href="http://127.0.0.1:5500/login.html" class="botao-participe-agora"><b>Sair</b></a>
+            </div>
+        </header>
+    <div class="sabores">
+        <div class="sabor">
+
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="filmes">
+
+            <div class="img-filmes">
+                <img src="img/naruto.png" class="img-sabor">
+                <p class="p-filmes">Naruto</p>
+            </div>
+            <div class="img-filmes">
+                <img src="img/dragonz.png" class="img-sabor">
+                <p class="p-filmes">Dragon ball z</p>
+            </div>
+            <div class="img-filmes">
+                <img src="img/jovens.png" class="img-sabor">
+                <p class="p-filmes">Os jovens titãs</p>
+            </div>
+            <div class="img-filmes">
+                <img src="img/1010.png" class="img-sabor">
+                <p class="p-filmes">Ben 10</p>
+            </div>
+            <div class="img-filmes">
+                <img src="img/man.png" class="img-sabor">
+                <p class="p-filmes">one punch man</p>
+            </div>
+            <div class="img-filmes">
+                <img src="img/dororo.png" class="img-sabor">
+                <p class="p-filmes">Dororo</p>
+            </div>
+            <div class="img-filmes">
+                <img src="img/beach.png" class="img-sabor">
+                <p class="p-filmes">bleach</p>
+            </div>
+        </div>
+        <div class="filmes">
+
+
+            <div class="img-filmes">
+                <img src="img/ultraman.png" class="img-sabor">
+                <p class="p-filmes">Ultraman</p>
+            </div>
+            <div class="img-filmes">
+                <img src="img/flcl.png" class="img-sabor">
+                <p class="p-filmes">FLCL</p>
+            </div>
+            <div class="img-filmes">
+                <img src="img/tiger.png" class="img-sabor">
+                <p class="p-filmes">Tiger e bunny</p>
+            </div>
+            <div class="img-filmes">
+                <img src="img/hero.png" class="img-sabor">
+                <p class="p-filmes">Hero mark</p>
+            </div>
+            <div class="img-filmes">
+                <img src="img/erased.png" class="img-sabor">
+                <p class="p-filmes">Erased</p>
+            </div>
+            <div class="img-filmes">
+                <img src="img/titas.png" class="img-sabor">
+                <p class="p-filmes">Id-0</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    const slider = document.querySelectorAll('.filmes');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    
+    
+    
+    slider.forEach(Slid =>{
+        Slid.addEventListener('mousedown', (e) => {
+            isDown = true;
+            Slid.classList.add('active');
+            startX = e.pageX - Slid.offsetLeft;
+            scrollLeft = Slid.scrollLeft;
+        });
+        Slid.addEventListener('mouseleave', () => {
+            isDown = false;
+            Slid.classList.remove('active');
+        });
+        Slid.addEventListener('mouseup', () => {
+            isDown = false;
+            Slid.classList.remove('active');
+        });
+        Slid.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - Slid.offsetLeft;
+            const walk = (x - startX) * 1;
+            Slid.scrollLeft = scrollLeft - walk;
+            console.log(walk);
+        });
+    })
+    </script>
+</body>
+</html>
