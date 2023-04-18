@@ -1,6 +1,6 @@
 .login {
-    background-color: #ECEED0;
-    ;
+    background-color: #575757;
+
 }
 
 .divlogin {
@@ -111,7 +111,7 @@
 }
 
 .principal2 {
-    background-color: #ECEED0;
+    background-color: #575757;
 }
 
 /*img*/
@@ -123,18 +123,19 @@
 
 .img-sabor {
     border-radius: 50px;
-    margin: 10px; 
+    margin: 10px;
 
-    
-   
+
+
 }
-.img-sabor:hover{
-  border-radius: 8px;
-  margin: 10px;
-  transition: 500ms;
-  border: solid rgb(114, 11, 11) 60px;
-  width: 400px;
- 
+
+.img-sabor:hover {
+    border-radius: 8px;
+    margin: 10px;
+    transition: 500ms;
+    border: solid rgb(114, 11, 11) 60px;
+    width: 400px;
+
 
 }
 
@@ -155,7 +156,7 @@
     display: flex;
     overflow-x: scroll;
     margin: 20px;
-  
+
 }
 
 
@@ -265,9 +266,10 @@ input {
     background-color: #000000;
     color: rgb(255, 255, 255);
     border: solid rgb(214, 0, 0);
-   
+
 }
-.geek{
+
+.geek {
     height: 200px;
     height: 300px;
 }
@@ -280,7 +282,7 @@ input {
 }
 
 .load {
-    background-color: #AFB4AE;
+    background-color: #575757;
 }
 
 .sair {
@@ -294,5 +296,5 @@ input {
 }
 
 .messi {
-  text-align: end;
+    text-align: end;
 }
